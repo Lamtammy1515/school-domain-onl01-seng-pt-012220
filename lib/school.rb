@@ -25,8 +25,10 @@ class School
   end 
   
   def sort 
-    
-    @roster.key.sort
+    array = @roster.key.sort
+    @new_roster = {}
+    array.each do |key, value|
+      value.sort
     end 
   end 
  
