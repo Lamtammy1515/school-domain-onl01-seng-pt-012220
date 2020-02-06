@@ -1,7 +1,7 @@
 # code here!
 
 class School
-  attr_accessor :name 
+  attr_accessor :name, :roster
 
   def initialize(name)
     @name = name 
@@ -12,7 +12,7 @@ class School
     @roster
   end 
   
-  def add_student(student, grade)
+  def add_student(name, grade)
     @student = student
     @grade = grade
   end
